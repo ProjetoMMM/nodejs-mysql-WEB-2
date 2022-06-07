@@ -1,0 +1,40 @@
+<!--<header class="cabeçalho">
+    <img class="logo" src="logo.png" alt="Muda Meu Mundo - Compre bem e faça o bem">
+</header>-->
+
+
+<main class="cadastro">
+<div>
+    <h1 class="titulo">Cadastro Novo Funcionário</h1>
+    <p>Funcionário novo? Faça aqui o seu cadastro!</p>
+</div>
+<form action="/cadastro" method="POST">
+<fieldset class="formulario">
+    <div class="pergunta">
+        <label for="name">Nome Completo</label>
+        <input type="text" name="name" placeholder="Digite aqui seu nome completo" required>      
+    </div>
+    <div class="pergunta">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" placeholder="ex: agrônomo@mmm.br" required>
+    </div>
+    <div class="pergunta">
+        <label for="password">Crie sua senha</label>
+        <input type="password" name="password" placeholder="Senha para uso exclusivo do agrônomo " required>
+    </div>
+    <div class="pergunta">
+        <label for="confirmpassword">Confirme a senha</label>
+        <input type="password" name="confirmpassword" placeholder="Repita sua senha" required>
+    </div>
+    <div class="pergunta">
+        <label for="cell">celular - WhatsApp</label>
+        <input type="tel" name="cell" placeholder="ex: xx xxxxx-xxxx" autocomplete="off" pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" required>
+    </div>
+    <div class="pergunta">
+        <label for="state">Estado</label>
+        <input type="text" name="state" placeholder="Ex: Pernambuco" autocomplete="off" required>
+    </div>
+    <input type="submit" class="retorno" value="Cadastro Criado"> 
+ </fieldset>   
+</form>
+</main>

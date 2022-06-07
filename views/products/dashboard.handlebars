@@ -1,0 +1,23 @@
+<div class="dashboard">
+    <div class="title-container">
+        <h2>Dashboard</h2>
+        <a href="products/criar" class="btn">Criar Requisição</a>
+        <a href="#" class="btn">Ver produtos disponíveis</a>
+    </div>
+    <h3>SUAS REQUISIÇÕES:</h3>
+    <ul>
+        {{#each products}}
+            <li>
+                <span class="label">{{this.pname}}</span>
+                <span class="label">{{this.pqty}}</span>
+                <span class="actions">
+                    <a href="/products/redefinirProd/{{this.id}}" class="btn">Editar</a>
+                    <form action="/products/deletar" method="POST">
+                        <input type="hidden" name="id" value="{{this.id}}">
+                        <input type="submit" value="Excluir" class="btn">
+                    </form>
+                </span>
+            </li>
+        {{/each}}
+    </ul>
+</div>

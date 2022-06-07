@@ -1,0 +1,20 @@
+    <main class="rec_senha">
+    <div>
+        <h1 class="titulo">Redefina seu produto:</h1>
+        <p>Preencha os dados abaixo:</p>
+    </div>
+    <form action="/products/redefinirProd" method="POST">
+        <input type="hidden" name="id" value="{{product.id}}">
+        <fieldset class="formulario">
+            <div>
+                <label class="pergunta">Produto</label>
+                <input type="text" name="pname" placeholder="{{product.pname}}" required>      
+            </div>
+            <div>
+                <label class="pergunta">Quantidade em quilos</label>
+                <input type="number" name="pqty" placeholder="{{product.pqty}}" required>
+            </div>
+            <input type="submit" class="retorno" value="Redefinir"> 
+    </fieldset>   
+    </form>
+    </main>

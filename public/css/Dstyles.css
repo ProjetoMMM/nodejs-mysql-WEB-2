@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body{
+    background-color: #EADDCA;
+}
+
+#logo img {
+    height: 60px;
+}
+
+/*BARRA DE NAVEGAÇÃO*/
+#barranav {
+    padding: 1.2em 1.4em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border-bottom: 2px solid #EADDCA;
+}
+
+#barranav ul {
+    display: flex;
+    list-style: none;
+}
+
+#barranav ul li {
+    margin-left: 1em;
+}
+
+#barranav ul li a {
+    text-decoration: none;
+    transition: .5s;
+    font-weight: bold;
+    color: #a5a4a4;
+    font-size: 25px;
+}
+
+#barranav ul li a:hover {
+    color: #005234;
+}
+
+/*DASHBOARD*/
+.title-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5em;
+    margin-top: 5px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title-container h2 {
+    color: #ffffff;
+    border-left: 4px solid #e2b978;
+    padding: 10px;
+    text-align: center;
+}
+
+a{
+    color: #ffffff;
+    margin-top: 9px;
+    margin-right: 10px;
+}
+
+h3 {
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
+    font-weight: 600;
+    font-weight: bold;
+    color: #005234;
+    padding: 19px;
+    display: flex;
+    justify-content: center;
+}
+
+.dashboard ul {
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.dashboard li {
+    padding: 12px;
+    border-bottom: 2px solid #e2b978;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+.dashboard .actions {
+    display: flex;
+}
+
+.btn {
+    color: #005234;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*FOOTER*/
+footer {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #a5a4a4;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:60px;   
+}
+
+footer span {
+    font-weight: bold;
+    color: #EADDCA;
+}

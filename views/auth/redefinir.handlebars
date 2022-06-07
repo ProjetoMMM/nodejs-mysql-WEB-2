@@ -1,0 +1,29 @@
+    
+    
+    <main class="rec_senha">
+    <div>
+        <h1 class="titulo">Redefina aqui sua senha:</h1>
+        <p>Preencha os dados abaixo para redefinir sua senha:</p>
+    </div>
+    <form action="/redefinir" method="POST">
+    <fieldset class="formulario">
+        <div>
+            <label class="pergunta">nome completo</label>
+            <input type="text" name="name" placeholder="digite aqui seu nome completo" id="nome" autocomplete="off" required>      
+        </div>
+        <div>
+            <label class="pergunta">email</label>
+            <input type="email" name="email" id="email" placeholder="ex: agrônomo@mmm.br" autocomplete="off" required>
+        </div>
+        <div>
+            <label class="pergunta">digite sua nova senha</label>
+            <input type="password" name="password" placeholder="senha para uso exclusivo do agrônomo " id="senha" required>
+        </div>
+        <div>
+            <label class="pergunta">confirme sua nova senha</label>
+            <input type="password" name="confirmpassword" placeholder="senha para uso exclusivo do agrônomo " id="senha" required>
+        </div>
+        <input type="submit" class="retorno" value="Nova senha cadastrada"> 
+    </fieldset>   
+    </form>
+    </main>

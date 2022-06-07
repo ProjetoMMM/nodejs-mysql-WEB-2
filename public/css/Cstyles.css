@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+}
+
+#logo img {
+    height: 60px;
+}
+
+#barranav {
+    padding: 1.2em 1.4em;
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ffffff;
+    background-color: #EADDCA;
+}
+
+
+#barranav ul {
+    display: flex;
+    list-style: none;
+}
+
+#barranav ul li {
+    margin-left: 1em;
+}
+
+#barranav ul li a {
+    text-decoration: none;
+    transition: .5s;
+    font-weight: bold;
+    color: #a5a4a4;
+    font-size: 25px;
+}
+
+#barranav ul li a:hover {
+    color: #005234;
+}
+
+body{
+    background-image: url(../img/muda.jpg);
+    background-size: cover;
+}
+
+.criar-form-container{
+    background-color: #EADDCA;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    padding: 20px 25px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+a{
+    color: #7a7a7a;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+h1{
+    font-family: 'Caveat', cursive;
+    font-size: 50px;
+    font-weight: 600;
+    color: #005234;
+    padding: 19px;
+    display: flex;
+    justify-content: center;
+}
+
+.form-control{
+    display: block;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: #000000;
+    font-weight: 600;
+    text-align: left;
+    padding: 10px;
+}
+
+input{
+    text-align: center;
+    padding: 5px;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+input:focus{
+    border: 2px solid #005234;
+}
+
+.submit{
+    text-align: center;
+    padding: 5px;
+    width: 400px;
+    color: #ffffff;
+    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    font-weight: 600;
+    border-radius: 15px;
+    background-color: #A6674C;
+    font-weight: bold;
+    cursor: pointer;
+}
