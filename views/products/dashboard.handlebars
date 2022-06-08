@@ -1,23 +1,45 @@
-<div class="dashboard">
-    <div class="title-container">
-        <h2>Dashboard</h2>
-        <a href="products/criar" class="btn">Criar Requisição</a>
-        <a href="#" class="btn">Ver produtos disponíveis</a>
-    </div>
-    <h3>SUAS REQUISIÇÕES:</h3>
-    <ul>
-        {{#each products}}
-            <li>
-                <span class="label">{{this.pname}}</span>
-                <span class="label">{{this.pqty}}</span>
-                <span class="actions">
-                    <a href="/products/redefinirProd/{{this.id}}" class="btn">Editar</a>
-                    <form action="/products/deletar" method="POST">
-                        <input type="hidden" name="id" value="{{this.id}}">
-                        <input type="submit" value="Excluir" class="btn">
-                    </form>
-                </span>
-            </li>
-        {{/each}}
-    </ul>
-</div>
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" type="text/css" href="Dstyle.css" media="screen">
+
+        <title>Dashboard</title>
+    </head>
+
+    <body>  
+        <div>
+            <h1 id="titulo">Área de pesquisa</h1>
+            <p id="subtitulo">Complete com as informações desejadas</p>
+            <br>
+        </div>
+
+        <form>
+
+            <fieldset class="grupo">
+                <div class="campo">
+                    <label for="product"><strong>Que produto?</strong></label>
+                    <input type="text" name="product" id="pproduct" required>
+                </div>
+                <div class="campo">
+                    <label for="amount"><strong>Qual a quantidade desse produto</strong></label>
+                    <input type="text" name="amount" id="amount" required>
+                </div>
+            </fieldset> 
+
+            
+            <div class="campo">
+                <label for="date"><strong>Para qual dia?</strong></label>
+                <input type="date" name="date" id="date" required>
+            </div>
+
+            <button class="botao" type="submit" onsubmit="">Concluído</button>            
+
+        </form>
+
+    </body>
+
+</html>
